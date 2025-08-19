@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: my-app-foo
+  name: my-app-bar
   namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io
@@ -10,7 +10,7 @@ spec:
 
   source:
     repoURL: https://github.com/anssi-n/DemoK8sDeployment.git
-    path: environments/staging/secomd-app
+    path: environments/staging/second-app
     targetRevision: HEAD
   destination:
     server: https://kubernetes.default.svc
