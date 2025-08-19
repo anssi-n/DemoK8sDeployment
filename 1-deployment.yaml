@@ -6,7 +6,7 @@ metadata:
   labels:
     app: demo-app
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: demo-app
@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: demoapp
-        image: bobfleming/k8s-demo-app:1.0
+        image: bobfleming/k8s-demo-app:2.0
         ports:
         - containerPort: 80
         env:
