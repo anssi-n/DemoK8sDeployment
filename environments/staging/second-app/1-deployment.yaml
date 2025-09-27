@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: secondapp
-          image: bobfleming/k8s-demo-app:1.0
+          image: bobfleming/k8s-demo-app:2.0
           ports:
             - containerPort: 80
           env:
